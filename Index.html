@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- configurada para acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- utilizado para como a pagina se comportar com mobile e ipads-->
+    <title>Portifólio</title>
+    <style>
+        :root{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        h1{
+            margin: 0;
+            text-shadow: 0 4px 4px #0004;
+            width: 20ch;
+        }
+
+        .header{
+            height: 50vh;
+            /*border: 1px solid red;*/
+            background: linear-gradient(to right bottom, #FF4f4f, orange);
+            color: #FFF;
+            /*text-align: center;*/
+            display: grid; /*alinhando texto no centro*/
+            place-items: center;
+            box-shadow: 0 4px 4px #0004;
+            text-align: center;
+        }
+
+        .profile{
+            border: 5px dotted green;
+            position: relative;
+            top: -75px;
+            text-align: center;
+
+        }
+
+        .profile__copy{
+            margin: 32px auto;
+            max-width: 120ch; /*de 75 a 120 caracteres*/
+            font-style: italic;
+
+        }
+
+        .profile__foto{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /*cria um circulo com uma imagem quadrada*/
+            border: 5px solid #FFF; 
+            box-shadow: 0 4px 4px #0004;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Olá meu nome é Marcos Michel Luciano</h1>
+    </header>
+    <Section class="profile">
+        <img class ="profile__foto" src="Michel3x4.jpg" alt="Marcos Michel">
+        <p class="profile__copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quod fuga doloremque facilis a. Adipisci fugit, nobis, quasi saepe, autem similique hic totam in dolore consequuntur facere velit molestias unde.</p>
+    </Section>
+    
+</body>
+</html>
