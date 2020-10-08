@@ -26,10 +26,11 @@ h1{
 }
 
 .profile{
-    /*border: 5px dotted green;*/
+    /*border: 2px solid red;*/
     position: relative;
     top: -75px;
     text-align: center;
+    padding: 0px;
 
 }
 
@@ -47,19 +48,30 @@ h1{
     font-style: italic;
 }
 
-.profile__social,
-.footer__social {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 16px;
-    padding: 0;
-    width: fit-content;
-    list-style: none;
+.profile_rede_social a:visited{
+    color: #c6c6c7;
 }
+.profile_rede_social a:link,
+.footer_rede_social a:link {
+        color: black;
+        padding: 10px 12px;
+        text-decoration: none;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+.footer_rede_social a:link{
+    color: #FFF;
+}
+
+.footer_rede_social a:visited{
+    color: #c6c6c7;
+}
+
 .separador{
     width: 75vw;
     border: 1px solid #c4c4c4;
-    margin-top: 35px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -147,9 +159,6 @@ button {
     cursor: pointer; /*faz o mouse mudar o ponteiro*/
 }
 
-
-
-
 .footer {
     box-sizing: border-box;
     position: fixed;
@@ -161,6 +170,7 @@ button {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    text-align: center;
 }
 
 .footer__social{
